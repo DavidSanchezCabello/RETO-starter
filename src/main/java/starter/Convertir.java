@@ -23,12 +23,14 @@ public class Convertir {
 		String mensaje = "";
 		switch (temperature+"") {
 		case "ceAfa":
-			mensaje = celsiusAFahrenheit(temperature)+"";
+			mensaje = "La conversión de cesius a fahrenheit es:" + celsiusAFahrenheit(temperature);
+			break;
 		case "faAce":
-			mensaje = fahrenheitACelsius(temperature)+"";
+			mensaje = "La conversión de fahrenheit a cesius es:" + fahrenheitACelsius(temperature);
+			break;
 		default:
-			mensaje = "No hay datos";
-			
+			mensaje = "No hay datos correctos";
+			break;
 		}
 		return mensaje;
 	}

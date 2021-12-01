@@ -17,14 +17,9 @@ public class ConvertAutoconfigure {
 	}
 	
 	@Bean
-	public Convertir celAfar() {
-		System.out.println("Idioma: " + properties.getTemperature());
+	public Convertir conversor() {
+		System.out.println("Temperatura: " + properties.getTemperature());
 		return new Convertir(properties.getTemperature());
 	}
 	
-	@Bean
-	public Convertir farAcel() {
-		System.out.println("Idioma: " + properties.getTemperature());
-		return new Convertir(properties.getTemperature());
-	}
 }
