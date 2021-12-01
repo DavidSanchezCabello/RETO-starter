@@ -19,20 +19,16 @@ public class Convertir {
 		return (fahrenheit - 32) / 1.8f;
 	}
 
-	public String mensajeConversion() {
-		String mensaje = "";
-		switch (temperature+"") {
+	public String mensajeConversion(String index) {
+		switch (index) {
 		case "ceAfa":
-			mensaje = "La conversión de cesius a fahrenheit es:" + celsiusAFahrenheit(temperature);
-			break;
+			return "La conversión de cesius a fahrenheit es:" + celsiusAFahrenheit(temperature);
+			
 		case "faAce":
-			mensaje = "La conversión de fahrenheit a cesius es:" + fahrenheitACelsius(temperature);
-			break;
+			return "La conversión de fahrenheit a cesius es:" + fahrenheitACelsius(temperature);
 		default:
-			mensaje = "No hay datos correctos";
-			break;
+			return  "No hay datos correctos";
 		}
-		return mensaje;
 	}
 
 	public double getTemperature() {
