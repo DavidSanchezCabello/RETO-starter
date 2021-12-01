@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "convert.mensaje",
+      "type": "starter.ConvertProperties",
+      "sourceType": "starter.ConvertProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "convert.mensaje.temperature",
+      "type": "java.lang.Double",
+      "sourceType": "starter.ConvertProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
